@@ -1,0 +1,324 @@
+:root {
+    --primary-color: #888888;
+    --secundary-color: #707070;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    color: var(--primary-color);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+
+
+/*      HEADER         */
+
+.header {
+    text-align: center;
+    color: white ;
+    padding: 60px 0 130px 0;
+    background-color: var(--secundary-color);
+
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 65%
+    );
+}
+
+.header h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.header h3 {
+    font-size: 14px;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+
+
+
+
+/*      NAVBAR        */
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0 20px
+
+}
+
+.navbar li {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0px 5px 10px #00000029;
+    text-align: center;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 14px;
+    padding: 12px 35px;
+    display: block;
+}
+
+
+
+
+
+/*      SIGN-IN       */
+
+.signin-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.signin-section article {
+    width: 63%;
+    max-width: 520px;
+    text-align: left;
+}
+
+.signin-section article h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.signin-section article p {
+    font-size: 12px;
+}
+
+.signin-form {
+    width: 37%;
+
+}
+
+.signin-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-form label, .gender-opt{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.signin-form input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid var(--secundary-color);
+}
+
+.gender-opt input:last-child{
+    margin-left: 40px;
+}
+
+.gender-opt input {
+    margin-right: 3px;
+    align-self: center;
+}
+
+.signin-form button {
+    padding: 7px;
+    font-size: 16px;
+    color: var(--primary-color);
+    background-color: white;
+    border: 1px solid var(--secundary-color);
+    border-radius: 4px;
+}
+
+
+
+
+
+
+/*        PRODUCTS         */
+
+.products-section fieldset {
+    border-top: 1px solid var(--secundary-color);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.products-section fieldset legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: calc(50% - 90px - 30px);
+    padding: 0 20px;
+}
+
+.products-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.product .product-photo {
+    height: 140px;
+    border: 1px solid var(--secundary-color);
+}
+
+.product h2 {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 14px;
+}
+
+.product p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.product p:last-of-type {
+    margin-top: 6px;
+}
+
+.product h1 {
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+.product button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 6px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid var(--secundary-color);
+    border-radius: 5px;
+    color: var(--secundary-color);
+}
+
+.products-section button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: white;
+    border: 1px solid var(--secundary-color);
+    border-radius: 3px;
+    color: var(--secundary-color);
+    text-align: center;
+}
+
+.products-section .btn-request {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 130px 0 ;
+}
+
+
+/*        SHARE        */
+
+.share-section {
+    text-align: center;
+}
+
+.share-section fieldset {
+    border-top: 1px solid var(--secundary-color);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+}
+
+.share-section fieldset legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: calc(50% - 90px - 30px);
+    padding: 0 20px;
+}
+
+.share-section .share-text {
+    padding-top: 45px;
+}
+
+.share-section .share-text p {
+    font-size: 14px;
+}
+
+.share-section form {
+    padding-top: 40px;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.share-section form label {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 40px;
+}
+
+.share-section form input {
+    width: 340px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.share-section button {
+    font-size: 16px;
+    padding: 10px 80px;
+    width: 260px;
+    background-color: white;
+    border: 1px solid var(--secundary-color);
+    border-radius: 3px;
+    color: var(--secundary-color);
+    text-align: center;
+    margin-top: 50px ;
+    margin-bottom: 70px;
+}
+
+
+
+/*      FOOTER       */
+
+.footer {
+    text-align: center;
+    color: white ;
+    padding: 160px 0 85px 0;
+    background-color: var(--secundary-color);
+
+    clip-path: polygon(
+        100% 100%,
+        0 100%,
+        0 30%,
+        100% 0
+    );
+}
+
+.footer p {
+    font-size:12px;
+}
+
