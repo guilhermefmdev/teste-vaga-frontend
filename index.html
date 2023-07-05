@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linx | Home</title>
-    <script defer src="main.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <main> 
-        <header class="header">
+        <header class="header" id="home">
             <h2>uma seleção de produtos</h2>
             <h1>especial para você</h1>
             <h3>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h3>
@@ -17,20 +17,20 @@
 
             <nav class="navbar">
                 <ul>
-                    <li><a href="#" draggable="false">Conheça a Linx</a></li>
+                    <li><a href="#home" draggable="false" >Conheça a Linx</a></li>
                
-                    <li><a href="#" draggable="false">Ajde o algorítmo</a></li>
+                    <li><a href="#newsletterform" draggable="false">Ajude o algorítmo</a></li>
      
-                    <li><a href="#" draggable="false">Seus produtos</a></li>
+                    <li><a href="#products" draggable="false">Seus produtos</a></li>
             
-                    <li><a href="#" draggable="false">Compartilhe</a></li>
+                    <li><a href="#share" draggable="false">Compartilhe</a></li>
                 </ul>
             </nav>
         </header>
         
         <div class="container">
             
-            <section class="signin-section">
+            <section class="signin-section" id="newsletterform">
 
                 <article>
                 <h2>Ajude o algorítimo a ser mais certeiro</h2>
@@ -76,103 +76,25 @@
             </section>
 
 
-            <section class="products-section">
-
+            <section class="products-section" id="products">
                 
                 <fieldset>
                     <legend>Sua seleção especial</legend>
                 </fieldset>
                 
-                
+                <div id="loading-box">                    
+                    <p id="loading">Carregando os Produtos...</p>
+                </div>
+
                 <div class="products-grid">
-                    <div class="product">
-                        <div class="product-photo"></div>
-                        <h2>Nome do produto</h2>
-                        <p>Descrição do profuto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p>De: R$23,99</p>
-                        <h1>Por: R$19,99</h1>
-                        <p>ou 2x de R$9,99</p>
-                        <button type="button">Comprar</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="product-photo"></div>
-                        <h2>Nome do produto</h2>
-                        <p>Descrição do profuto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p>De: R$23,99</p>
-                        <h1>Por: R$19,99</h1>
-                        <p>ou 2x de R$9,99</p>
-                        <button type="button">Comprar</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="product-photo"></div>
-                        <h2>Nome do produto</h2>
-                        <p>Descrição do profuto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p>De: R$23,99</p>
-                        <h1>Por: R$19,99</h1>
-                        <p>ou 2x de R$9,99</p>
-                        <button type="button">Comprar</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="product-photo"></div>
-                        <h2>Nome do produto</h2>
-                        <p>Descrição do profuto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p>De: R$23,99</p>
-                        <h1>Por: R$19,99</h1>
-                        <p>ou 2x de R$9,99</p>
-                        <button type="button">Comprar</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="product-photo"></div>
-                        <h2>Nome do produto</h2>
-                        <p>Descrição do profuto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p>De: R$23,99</p>
-                        <h1>Por: R$19,99</h1>
-                        <p>ou 2x de R$9,99</p>
-                        <button type="button">Comprar</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="product-photo"></div>
-                        <h2>Nome do produto</h2>
-                        <p>Descrição do profuto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p>De: R$23,99</p>
-                        <h1>Por: R$19,99</h1>
-                        <p>ou 2x de R$9,99</p>
-                        <button type="button">Comprar</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="product-photo"></div>
-                        <h2>Nome do produto</h2>
-                        <p>Descrição do profuto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p>De: R$23,99</p>
-                        <h1>Por: R$19,99</h1>
-                        <p>ou 2x de R$9,99</p>
-                        <button type="button">Comprar</button>
-                    </div>
-
-                    <div class="product">
-                        <div class="product-photo"></div>
-                        <h2>Nome do produto</h2>
-                        <p>Descrição do profuto um pouco maior, com duas linhas ou três que explica melhor do que se trata.</p>
-                        <p>De: R$23,99</p>
-                        <h1>Por: R$19,99</h1>
-                        <p>ou 2x de R$9,99</p>
-                        <button type="button">Comprar</button>
-                    </div>
                 </div>
 
                 <div class="btn-request">
                 <button type="button">Ainda mais produtos aqui!</button>
                 </div>
-
             </section>
 
-            <section class="share-section">
+            <section class="share-section" id="share">
 
                 <fieldset>
                     <legend>Compartilhe a novidade</legend>
@@ -220,5 +142,7 @@
             <p>Guilherme Moraes 2023</p>
         </footer>
     </main>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
