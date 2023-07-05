@@ -1,22 +1,26 @@
-const url = 'https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1'
+let url = 'https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1'
 
 const loadingBox = document.querySelector('#loading-box')
 const productsGrid = document.querySelector('.products-grid')
-
+const moreProductsBtn = document.querySelector('.products-section button')
 // GET PRODUCTS
 
-async function getAllProducts() {
-    const response = await fetch(url)
+async function getAllProducts(initUrl){
+    await fetch(initUrl)
+    .then(response => {
+        return response.json()
+    })
+    .then(data => {
+        url = `https://${data.nextPage}`
 
-    const products = await response.json()
+        generateProducts(data)
+    })
+}
 
-    loadingBox.classList.add('hide')
-
-    const productsArray = products.products
-
-    productsArray.map((product) => {
+function generateProducts(data){
+    data.products.map((product) => {
         const div = document.createElement('div')
-
+    
         const img = document.createElement('div')
         const name = document.createElement('h3')
         const description = document.createElement('p')
@@ -24,7 +28,7 @@ async function getAllProducts() {
         const price = document.createElement('h2')
         const installments = document.createElement('p')
         const btn = document.createElement('button')
-
+    
         div.classList.add('product')
         img.classList.add('product-image')
         btn.classList.add('product-btn')
@@ -36,7 +40,7 @@ async function getAllProducts() {
         price.innerHTML = `Por: R$${product.price.toLocaleString('PT')}`
         installments.innerHTML = `Ou ${product.installments.count}x de R$${product.installments.value.toLocaleString('PT')}`
         btn.innerText = 'Comprar'
-
+    
         div.appendChild(img)
         div.appendChild(name)
         div.appendChild(description)
@@ -44,10 +48,12 @@ async function getAllProducts() {
         div.appendChild(price)
         div.appendChild(installments)
         div.appendChild(btn)
-
+    
         productsGrid.appendChild(div)
+    
+        loadingBox.classList.add('hide')
     })
 }
 
-getAllProducts()
 
+getAllProducts(url)

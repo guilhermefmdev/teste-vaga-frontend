@@ -219,6 +219,9 @@ main {
 }
 
 .product .product-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 140px;
     border: 1px solid var(--secundary-color);
 }
