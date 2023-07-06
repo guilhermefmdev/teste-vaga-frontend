@@ -41,6 +41,7 @@ main {
 }
 
 
+
 /*      HEADER         */
 
 .header {
@@ -149,19 +150,26 @@ main {
 .signin-form label, .gender-opt{
     font-size: 12px;
     margin-bottom: 10px;
+
+}
+
+.signin-form label:not(:first-child){
+    margin-top: 20px;
 }
 
 .signin-form input {
-    margin-bottom: 20px;
+
     padding: 5px;
     border: 1px solid var(--secundary-color);
 }
 
 .gender-opt input:last-child{
     margin-left: 40px;
+    margin-top: 20px;
 }
 
 .gender-opt input {
+    
     margin-right: 3px;
     align-self: center;
 }
@@ -176,7 +184,10 @@ main {
     cursor: pointer;
 }
 
-
+.span-input-error{
+    font-size: 12px;
+    color: red;
+}
 
 
 
@@ -362,4 +373,3 @@ main {
 .footer p {
     font-size:12px;
 }
-

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linx | Home</title>
 
-    <script src="assets/js/main.js" defer></script>
+    <script defer src="assets/js/main.js" ></script>
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -44,34 +44,40 @@
 
             
                 <div class="signin-form">
-                    <form>
+                    <form id="signinForm">
                         <label>
                             Seu nome:
                         </label>
-                            <input type="text" name="Nome" id="input-nome">
+                        <input type="text" name="name">
+                        <span class="span-input-error"></span>
                         
 
                         <label>
                             E-mail:
                         </label>
-                            <input type="text" name="E-mail" id="input-email">
+                        <input type="text" name="email" >
+                        <span class="span-input-error"></span>
                         
                             
                         <label>
                             CPF:
                         </label>
-                            <input type="text" name="CPF" id="input-cpf">
+                        <input type="number" name="cpf"  minlength="11" required>
+                        <span class="span-input-error"></span>
                         
 
                         <div class="gender-opt">
-                            <input type="radio" name="masc-fem" id="masculino">
+                            <input type="radio" name="masc-fem">
                             Masculino
 
-                            <input type="radio" name="masc-fem" id="feminino">
+                            <input type="radio" name="masc-fem">
                             Feminino 
+                            (opcional)
+                            
                         </div>   
+                        
 
-                        <button type="button">Enviar</button>   
+                        <button type="submit" onclick="formValidation('signinForm')">Enviar</button>   
 
                     </form>
                 </div>
@@ -106,33 +112,23 @@
                 <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
                 </div>
 
-                <form>
+                <form id="shareForm">
                    
                     <label>
                         Nome do seu amigo:
-                        
-                        
-                        <input type="text">
+                        <input type="text" name="name">
+                        <span class="span-input-error"></span>
                     </label>
-                        
-                   
-                    
-                    
-                    
-                    
-                   
+
                     <label>
                         E-mail:
-                        
-                        <input type="text">
+                        <input type="email" name="email">
+                        <span class="span-input-error"></span>
                     </label>
-                   
                     
-                    
-
                 </form>
-
-                <button type="button">Enviar agora</button>
+                
+                <button type="button"  onclick="formValidation('shareForm')">Enviar agora</button>
 
             </section>
 
