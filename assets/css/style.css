@@ -411,12 +411,12 @@ main {
     }
 
     .navbar-query ul {
-        width: 100%;
+        width: 90%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         position: absolute;
         top: 250px;
-        margin: 0 auto;
+        left: 6%;
     }
 
     .navbar-query ul li {
