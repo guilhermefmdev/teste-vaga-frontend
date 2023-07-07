@@ -1,6 +1,6 @@
 # teste-para-vaga-de-emprego
 Seja bem vindo ao meu **Teste para Desenvolvedor Júnior**,
-que teve como objetivo abordar minhas habilidades em HTML, CSS e JavaScript!
+que teve como objetivo desafiar minhas habilidades em HTML, CSS e JavaScript!
 
 ---
 
