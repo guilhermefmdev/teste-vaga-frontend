@@ -42,7 +42,7 @@ function generateProducts(data){
         $installments.innerHTML = `Ou ${product.installments.count}x de R$${product.installments.value.toLocaleString('PT')}`
         $btn.innerText = 'Comprar'
         
-        $div.appendChild($wrap)
+        
         $div.appendChild($img)
         $wrap.appendChild($name)
         $wrap.appendChild($description)
@@ -50,7 +50,7 @@ function generateProducts(data){
         $wrap.appendChild($price)
         $wrap.appendChild($installments)
         $wrap.appendChild($btn)
-    
+        $div.appendChild($wrap)
         productsGrid.appendChild($div)
     
         loadingBox.classList.add('hide')
