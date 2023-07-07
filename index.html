@@ -11,25 +11,32 @@
 </head>
 <body>
     <main> 
-        <header class="header" id="home">
-            <h2>uma seleção de produtos</h2>
-            <h1>especial para você</h1>
-            <h3>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h3>
-            
+        <div class="header-background">
+            <header class="header" id="home">
+                <h2>uma seleção de produtos</h2>
+                <h1>especial para você</h1>
+                <h3>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</h3>
+                
 
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#home" draggable="false" >Conheça a Linx</a></li>
-               
-                    <li><a href="#newsletterform" draggable="false">Ajude o algorítmo</a></li>
-     
-                    <li><a href="#products" draggable="false">Seus produtos</a></li>
-            
-                    <li><a href="#share" draggable="false">Compartilhe</a></li>
-                </ul>
-            </nav>
-        </header>
+
+            </header>
+
+
+
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" draggable="false" >Conheça a Linx</a></li>
         
+                <li><a href="#newsletterform" draggable="false">Ajude o algorítmo</a></li>
+
+                <li><a href="#products" draggable="false">Seus produtos</a></li>
+        
+                <li><a href="#share" draggable="false">Compartilhe</a></li>
+            </ul>
+        </nav>
+
         <div class="container">
             
             <section class="signin-section" id="newsletterform">
@@ -113,19 +120,19 @@
                 </div>
 
                 <form id="shareForm">
-                   
-                    <label>
-                        Nome do seu amigo:
-                        <input type="text" name="name">
-                        <span class="span-input-error"></span>
-                    </label>
+                    <div class="share-form">
+                        <label>
+                            Nome do seu amigo:
+                            <input type="text" name="name">
+                            <span class="span-input-error"></span>
+                        </label>
 
-                    <label>
-                        E-mail:
-                        <input type="email" name="email">
-                        <span class="span-input-error"></span>
-                    </label>
-                    
+                        <label>
+                            E-mail dele:
+                            <input type="email" name="email">
+                            <span class="span-input-error"></span>
+                        </label>
+                    </div>
                 </form>
                 
                 <button type="button"  onclick="formValidation('shareForm')">Enviar agora</button>

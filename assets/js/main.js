@@ -20,7 +20,7 @@ async function getAllProducts(initUrl){
 function generateProducts(data){
     data.products.map((product) => {
         const $div = document.createElement('div')
-    
+        const $wrap = document.createElement('div')
         const $img = document.createElement('div')
         const $name = document.createElement('h3')
         const $description = document.createElement('p')
@@ -32,7 +32,8 @@ function generateProducts(data){
         $div.classList.add('product')
         $img.classList.add('product-image')
         $btn.classList.add('product-btn')
-    
+        $wrap.classList.add('product-info-wrap')
+
         $img.innerHTML = `<img src="${product.image}" alt="Imagem do Produto">`
         $name.innerText = product.name
         $description.innerText = product.description
@@ -40,14 +41,15 @@ function generateProducts(data){
         $price.innerHTML = `Por: R$${product.price.toLocaleString('PT')}`
         $installments.innerHTML = `Ou ${product.installments.count}x de R$${product.installments.value.toLocaleString('PT')}`
         $btn.innerText = 'Comprar'
-    
+        
+        $div.appendChild($wrap)
         $div.appendChild($img)
-        $div.appendChild($name)
-        $div.appendChild($description)
-        $div.appendChild($oldPrice)
-        $div.appendChild($price)
-        $div.appendChild($installments)
-        $div.appendChild($btn)
+        $wrap.appendChild($name)
+        $wrap.appendChild($description)
+        $wrap.appendChild($oldPrice)
+        $wrap.appendChild($price)
+        $wrap.appendChild($installments)
+        $wrap.appendChild($btn)
     
         productsGrid.appendChild($div)
     
