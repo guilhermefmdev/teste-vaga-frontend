@@ -18,7 +18,7 @@ Ao longo que aprimorar meus conhecimentos sobre as linguagens e desenvolvimento 
 concisa possível.
 
 # Features
-Forms - Breve validação dos campos com alerta de envio quando preenchido corretamente;
+Forms - Validação dos campos com alerta de envio quando preenchido corretamente;
 
 Grid de Produtos - Preenchimento do grid por consulta de uma API paginada, 
 que consulta as próximas páginas quando a função do botão "Ainda mais produtos aqui!" é chamada;
