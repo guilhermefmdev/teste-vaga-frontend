@@ -1,5 +1,5 @@
-# teste-para-vaga-de-emprego
-Seja bem vindo ao meu **Teste para Desenvolvedor Júnior**,
+# teste-vaga-frontend
+Seja bem vindo ao meu **Teste para vaga de Desenvolvedor FrontEnd Júnior**,
 que teve como objetivo desafiar minhas habilidades em HTML, CSS e JavaScript!
 
 ---
