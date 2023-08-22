@@ -5,7 +5,7 @@ que teve como objetivo desafiar minhas habilidades em HTML, CSS e JavaScript!
 ---
 
 # Do que se trata?
-O teste em si consiste no desenvolvimento de uma *landing page*, 
+O teste consiste no desenvolvimento de uma *landing page*, 
 que contém um grid de produtos e dois formulários para o cadastro em uma *Newsletter*.
 
 # E como foi/está?
